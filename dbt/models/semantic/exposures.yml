@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: customer_intelligence_powerbi
+    label: Customer Intelligence Power BI Dashboard
+    type: dashboard
+    maturity: high
+    url: dashboards/powerbi/powerbi_dashboard_build_guide.md
+    description: Executive, customer, churn, cohort, product, and CLV dashboard specification.
+    depends_on:
+      - ref('mart_customer_360')
+      - ref('mart_product_profitability')
+      - ref('mart_cohort_retention')
+      - ref('mart_executive_kpis')
+    owner:
+      name: Analytics Engineering
+      email: analytics@example.com
+

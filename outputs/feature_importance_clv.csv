@@ -1,0 +1,7 @@
+feature,relative_importance,business_interpretation
+return_adjusted_profit,1.0,Higher profit increases predicted value.
+orders,0.9,Deeper purchase history increases confidence in future value.
+purchase_frequency_30d,0.82,Higher purchase cadence supports stronger CLV.
+engagement_score,0.7,Reachable and engaged customers are easier to retain.
+discount_dependency,-0.55,High discount dependency can reduce profitable value.
+return_rate,-0.5,High return behavior weakens return-adjusted value.

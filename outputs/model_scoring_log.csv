@@ -1,0 +1,4 @@
+scoring_output,model_name,rows_scored,grain,freshness_rule
+mart_churn_risk.csv,churn_model,250000,customer,Refresh before dashboard or activation publication.
+mart_clv.csv,clv_model,250000,customer,Refresh before CLV dashboard or high-value activation use.
+mart_customer_segments.csv,segmentation_model,250000,customer,Refresh when customer feature distribution changes materially.

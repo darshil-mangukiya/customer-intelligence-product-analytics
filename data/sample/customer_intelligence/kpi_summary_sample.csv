@@ -1,0 +1,6 @@
+kpi_name,value,display_format,grain,owner,threshold
+Churn Rate,0.768,Percent,Customer,Customer Analytics,< 0.35
+Retention Rate,0.232,Percent,Customer,Customer Analytics,>= 0.65
+Average Order Value,78.45,Currency,Order,BI Engineering,Tracked
+Return Rate,0.112,Percent,Order,Product Analytics,< 0.10
+Revenue Leakage from Returns and Discounts,28247631.39,Currency,Company,Finance / BI,Tracked

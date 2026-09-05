@@ -1,0 +1,6 @@
+order_id,customer_id,product_id,order_date,quantity,revenue,discount,return_flag,cost,profit,region_id,sales_channel,order_status
+O000001,C000001,P0001,2025-01-04,1,129.99,0.10,0,75.39,41.60,R01,Web,Completed
+O000002,C000002,P0002,2025-01-12,2,79.98,0.25,0,51.99,7.99,R02,Marketplace,Completed
+O000003,C000003,P0003,2025-02-03,3,74.97,0.00,0,31.49,43.48,R03,Mobile App,Completed
+O000004,C000004,P0004,2025-02-18,1,59.99,0.15,1,41.39,-41.39,R04,Web,Returned
+O000005,C000005,P0005,2025-03-06,1,89.99,0.05,0,54.89,30.60,R05,Mobile App,Completed

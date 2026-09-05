@@ -1,0 +1,86 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: customer-intelligence-postgres
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-analytics}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-analytics}
+      POSTGRES_DB: ${POSTGRES_DB:-analytics}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./sql/postgres/init/schema_postgres.sql:/docker-entrypoint-initdb.d/01_schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-analytics} -d ${POSTGRES_DB:-analytics}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+  analytics-pipeline:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: customer-intelligence-pipeline
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+      - ./reports:/app/reports
+    command: ["python", "-m", "etl.run_pipeline", "--customers", "5000", "--products", "250", "--orders", "25000", "--sessions", "18000"]
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: customer-intelligence-api
+    environment:
+      CUSTOMER_INTELLIGENCE_API_KEY: ${CUSTOMER_INTELLIGENCE_API_KEY:-}
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    volumes:
+      - ./data/marts:/app/data/marts:ro
+      - ./data/exports:/app/data/exports:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os, urllib.request; request=urllib.request.Request('http://localhost:8000/health', headers={'X-API-Key': os.getenv('CUSTOMER_INTELLIGENCE_API_KEY', '')}); urllib.request.urlopen(request, timeout=3)"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: customer-intelligence-streamlit
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - "127.0.0.1:${STREAMLIT_PORT:-8501}:8501"
+    volumes:
+      - ./data:/app/data:ro
+      - ./outputs:/app/outputs:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health', timeout=3)"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+    command: ["streamlit", "run", "app/streamlit_app.py", "--server.address", "0.0.0.0", "--server.port", "8501"]
+
+volumes:
+  postgres-data:

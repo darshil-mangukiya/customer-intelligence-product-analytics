@@ -1,0 +1,13 @@
+data_context,feature,coefficient,importance,direction,business_interpretation
+Synthetic portfolio data,recency_days,12.833907220648744,12.833907220648744,Increases churn risk,Longer time since last purchase is a direct churn warning.
+Synthetic portfolio data,orders,-0.6913289957852282,0.6913289957852282,Reduces churn risk,Higher purchase count usually indicates stronger relationship depth.
+Synthetic portfolio data,channel_diversity,-0.6637520745501544,0.6637520745501544,Reduces churn risk,Behavioral signal used in churn risk scoring.
+Synthetic portfolio data,category_diversity,-0.3515996275931937,0.3515996275931937,Reduces churn risk,Behavioral signal used in churn risk scoring.
+Synthetic portfolio data,return_rate,-0.2837752406931476,0.2837752406931476,Reduces churn risk,"Returns can indicate product fit, experience, or quality issues."
+Synthetic portfolio data,discount_dependency,0.2129067920678426,0.2129067920678426,Increases churn risk,High promo dependency may signal weak full-price loyalty.
+Synthetic portfolio data,product_diversity,0.2057917276425967,0.2057917276425967,Increases churn risk,Behavioral signal used in churn risk scoring.
+Synthetic portfolio data,net_revenue,-0.1401417933781789,0.1401417933781789,Reduces churn risk,Customer value changes the priority and risk economics of retention outreach.
+Synthetic portfolio data,avg_page_views,-0.11634996067518,0.11634996067518,Reduces churn risk,Behavioral signal used in churn risk scoring.
+Synthetic portfolio data,customer_age_days,0.0948999940652831,0.0948999940652831,Increases churn risk,Behavioral signal used in churn risk scoring.
+Synthetic portfolio data,purchase_frequency_30d,-0.093165663037849,0.093165663037849,Reduces churn risk,Frequent purchasing behavior indicates habit formation.
+Synthetic portfolio data,days_since_engagement,0.0845583351458807,0.0845583351458807,Increases churn risk,A long engagement gap weakens retention intervention effectiveness.

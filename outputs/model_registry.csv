@@ -1,0 +1,4 @@
+profile,customer_volume,authoritative_current,model_name,model_type,artifact_path,evaluation_output,primary_metric,primary_metric_value,owner,business_use,refresh_strategy
+full_250k,250000,false,churn_model,Logistic Regression,models/churn_model.joblib,outputs/churn_model_evaluation.csv,roc_auc,0.9952,Customer Analytics,Score churn probability and expected profit at risk.,Retrain after major feature changes or scheduled scoring refresh.
+full_250k,250000,false,clv_model,Regression,models/clv_model.joblib,outputs/clv_model_evaluation.csv,r2,0.3663,Customer Analytics,Estimate predicted customer value and CLV at risk.,Retrain after customer value distribution or channel mix shifts.
+full_250k,250000,false,segmentation_model,K-Means,models/segmentation_model.joblib,outputs/segmentation_evaluation.csv,silhouette_score,0.2769,Customer Analytics,Assign customer segments and business recommendations.,"Review clusters after major cohort, channel, or product mix changes."

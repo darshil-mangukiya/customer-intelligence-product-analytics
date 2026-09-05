@@ -1,0 +1,123 @@
+worksheet,datasource,field_reference,field_exists,calculation_exists,parameter_exists,status
+KPI Total Customers,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+KPI Total Customers,federated.p3_customer_analytics,customer_id,True,False,False,RESOLVED
+KPI Total Customers,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+KPI Net Revenue,federated.p3_executive_kpis,kpi_name,True,False,False,RESOLVED
+KPI Net Revenue,federated.p3_executive_kpis,value,True,False,False,RESOLVED
+KPI Return-adjusted Profit,federated.p3_executive_kpis,kpi_name,True,False,False,RESOLVED
+KPI Return-adjusted Profit,federated.p3_executive_kpis,value,True,False,False,RESOLVED
+KPI Churn Rate,federated.p3_executive_kpis,kpi_name,True,False,False,RESOLVED
+KPI Churn Rate,federated.p3_executive_kpis,value,True,False,False,RESOLVED
+KPI Predicted CLV,federated.p3_executive_kpis,kpi_name,True,False,False,RESOLVED
+KPI Predicted CLV,federated.p3_executive_kpis,value,True,False,False,RESOLVED
+KPI Revenue Leakage,federated.p3_executive_kpis,kpi_name,True,False,False,RESOLVED
+KPI Revenue Leakage,federated.p3_executive_kpis,value,True,False,False,RESOLVED
+KPI Experiment Lift,federated.p3_experiment_results,Experiment Absolute Lift,False,True,False,RESOLVED
+KPI Experiment Lift,federated.p3_experiment_results,absolute_difference,True,False,False,RESOLVED
+Executive Segment Distribution,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Executive Segment Distribution,federated.p3_customer_analytics,customer_id,True,False,False,RESOLVED
+Executive Segment Distribution,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Executive CLV Distribution,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Executive CLV Distribution,federated.p3_customer_analytics,predicted_12m_clv,True,False,False,RESOLVED
+Executive CLV Distribution,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Executive Product Profitability,federated.p3_product_profitability,category,True,False,False,RESOLVED
+Executive Product Profitability,federated.p3_product_profitability,product_performance_flag,True,False,False,RESOLVED
+Executive Product Profitability,federated.p3_product_profitability,return_adjusted_profit,True,False,False,RESOLVED
+Executive Experiment Summary,federated.p3_experiment_results,conversion_rate,True,False,False,RESOLVED
+Executive Experiment Summary,federated.p3_experiment_results,variant,True,False,False,RESOLVED
+Segment Comparison,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Segment Comparison,federated.p3_customer_analytics,loyalty_tier,True,False,False,RESOLVED
+Segment Comparison,federated.p3_customer_analytics,net_revenue,True,False,False,RESOLVED
+Segment Comparison,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+RFM Segment Matrix,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+RFM Segment Matrix,federated.p3_customer_analytics,customer_id,True,False,False,RESOLVED
+RFM Segment Matrix,federated.p3_customer_analytics,rfm_segment,True,False,False,RESOLVED
+RFM Segment Matrix,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Segment Channel Composition,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Segment Channel Composition,federated.p3_customer_analytics,net_revenue,True,False,False,RESOLVED
+Segment Channel Composition,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Segment Migration,federated.p3_segment_migration,customer_count,True,False,False,RESOLVED
+Segment Migration,federated.p3_segment_migration,migration_signal,True,False,False,RESOLVED
+Segment Migration,federated.p3_segment_migration,transition,True,False,False,RESOLVED
+Churn Risk Distribution,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Churn Risk Distribution,federated.p3_customer_analytics,churn_risk_tier,True,False,False,RESOLVED
+Churn Risk Distribution,federated.p3_customer_analytics,customer_id,True,False,False,RESOLVED
+Churn Risk Distribution,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Segment Risk Value,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Segment Risk Value,federated.p3_customer_analytics,churn_probability,True,False,False,RESOLVED
+Segment Risk Value,federated.p3_customer_analytics,expected_clv_at_risk,True,False,False,RESOLVED
+Segment Risk Value,federated.p3_customer_analytics,predicted_12m_clv,True,False,False,RESOLVED
+Segment Risk Value,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Retention Opportunity Ranking,federated.p3_retention_actions,churn_risk_tier,True,False,False,RESOLVED
+Retention Opportunity Ranking,federated.p3_retention_actions,estimated_opportunity,True,False,False,RESOLVED
+Retention Opportunity Ranking,federated.p3_retention_actions,priority,True,False,False,RESOLVED
+Retention Opportunity Ranking,federated.p3_retention_actions,segment_name,True,False,False,RESOLVED
+Churn Model Associations,federated.p3_churn_drivers,coefficient,True,False,False,RESOLVED
+Churn Model Associations,federated.p3_churn_drivers,direction,True,False,False,RESOLVED
+Churn Model Associations,federated.p3_churn_drivers,feature,True,False,False,RESOLVED
+CLV Distribution,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+CLV Distribution,federated.p3_customer_analytics,clv_band,True,False,False,RESOLVED
+CLV Distribution,federated.p3_customer_analytics,customer_id,True,False,False,RESOLVED
+CLV Distribution,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Historical vs Modeled Value,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Historical vs Modeled Value,federated.p3_customer_analytics,churn_risk_tier,True,False,False,RESOLVED
+Historical vs Modeled Value,federated.p3_customer_analytics,clv_band,True,False,False,RESOLVED
+Historical vs Modeled Value,federated.p3_customer_analytics,historical_clv,True,False,False,RESOLVED
+Historical vs Modeled Value,federated.p3_customer_analytics,predicted_12m_clv,True,False,False,RESOLVED
+Historical vs Modeled Value,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+CLV by Segment,federated.p3_customer_analytics,clv_band,True,False,False,RESOLVED
+CLV by Segment,federated.p3_customer_analytics,predicted_12m_clv,True,False,False,RESOLVED
+CLV by Segment,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+CLV by Channel,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+CLV by Channel,federated.p3_customer_analytics,clv_band,True,False,False,RESOLVED
+CLV by Channel,federated.p3_customer_analytics,predicted_12m_clv,True,False,False,RESOLVED
+CLV by Channel,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Risk Value Matrix,federated.p3_customer_analytics,acquisition_channel,True,False,False,RESOLVED
+Risk Value Matrix,federated.p3_customer_analytics,churn_risk_tier,True,False,False,RESOLVED
+Risk Value Matrix,federated.p3_customer_analytics,clv_band,True,False,False,RESOLVED
+Risk Value Matrix,federated.p3_customer_analytics,customer_id,True,False,False,RESOLVED
+Risk Value Matrix,federated.p3_customer_analytics,expected_clv_at_risk,True,False,False,RESOLVED
+Risk Value Matrix,federated.p3_customer_analytics,segment_name,True,False,False,RESOLVED
+Cohort Heatmap,federated.p3_cohort_retention,cohort_index,True,False,False,RESOLVED
+Cohort Heatmap,federated.p3_cohort_retention,cohort_month,True,False,False,RESOLVED
+Cohort Heatmap,federated.p3_cohort_retention,retention_rate,True,False,False,RESOLVED
+Retention Curves,federated.p3_cohort_retention,cohort_index,True,False,False,RESOLVED
+Retention Curves,federated.p3_cohort_retention,cohort_month,True,False,False,RESOLVED
+Retention Curves,federated.p3_cohort_retention,retention_rate,True,False,False,RESOLVED
+Cohort Size,federated.p3_cohort_retention,cohort_month,True,False,False,RESOLVED
+Cohort Size,federated.p3_cohort_retention,cohort_size,True,False,False,RESOLVED
+Category Profitability,federated.p3_product_profitability,category,True,False,False,RESOLVED
+Category Profitability,federated.p3_product_profitability,product_performance_flag,True,False,False,RESOLVED
+Category Profitability,federated.p3_product_profitability,return_adjusted_profit,True,False,False,RESOLVED
+Product Profit Rank,federated.p3_product_profitability,category,True,False,False,RESOLVED
+Product Profit Rank,federated.p3_product_profitability,product_name,True,False,False,RESOLVED
+Product Profit Rank,federated.p3_product_profitability,product_performance_flag,True,False,False,RESOLVED
+Product Profit Rank,federated.p3_product_profitability,return_adjusted_profit,True,False,False,RESOLVED
+Product Margin vs Returns,federated.p3_product_profitability,category,True,False,False,RESOLVED
+Product Margin vs Returns,federated.p3_product_profitability,net_revenue,True,False,False,RESOLVED
+Product Margin vs Returns,federated.p3_product_profitability,product_name,True,False,False,RESOLVED
+Product Margin vs Returns,federated.p3_product_profitability,product_performance_flag,True,False,False,RESOLVED
+Product Margin vs Returns,federated.p3_product_profitability,return_adjusted_margin,True,False,False,RESOLVED
+Product Margin vs Returns,federated.p3_product_profitability,return_rate,True,False,False,RESOLVED
+Product Leakage Risk,federated.p3_product_profitability,category,True,False,False,RESOLVED
+Product Leakage Risk,federated.p3_product_profitability,discount_amount,True,False,False,RESOLVED
+Product Leakage Risk,federated.p3_product_profitability,product_performance_flag,True,False,False,RESOLVED
+Product Leakage Risk,federated.p3_product_profitability,return_rate,True,False,False,RESOLVED
+Experiment Variant Rates,federated.p3_experiment_results,conversion_rate,True,False,False,RESOLVED
+Experiment Variant Rates,federated.p3_experiment_results,variant,True,False,False,RESOLVED
+Experiment Lift and CI,federated.p3_experiment_results,absolute_difference,True,False,False,RESOLVED
+Experiment Lift and CI,federated.p3_experiment_results,confidence_interval_high,True,False,False,RESOLVED
+Experiment Lift and CI,federated.p3_experiment_results,confidence_interval_low,True,False,False,RESOLVED
+Experiment Lift and CI,federated.p3_experiment_results,p_value,True,False,False,RESOLVED
+Experiment Lift and CI,federated.p3_experiment_results,practically_significant,True,False,False,RESOLVED
+Experiment Lift and CI,federated.p3_experiment_results,relative_lift,True,False,False,RESOLVED
+Experiment Lift and CI,federated.p3_experiment_results,statistically_significant,True,False,False,RESOLVED
+Experiment Decision,federated.p3_experiment_results,decision,True,False,False,RESOLVED
+Experiment Decision,federated.p3_experiment_results,practically_significant,True,False,False,RESOLVED
+Experiment Decision,federated.p3_experiment_results,recommendation,True,False,False,RESOLVED
+Experiment Sample and SRM,federated.p3_experiment_results,customers,True,False,False,RESOLVED
+Experiment Sample and SRM,federated.p3_experiment_results,variant,True,False,False,RESOLVED
+Retention Scenario Table,federated.p3_retention_economics,estimate_type,True,False,False,RESOLVED
+Retention Scenario Table,federated.p3_retention_economics,estimated_roi,True,False,False,RESOLVED
+Retention Scenario Table,federated.p3_retention_economics,expected_net_benefit,True,False,False,RESOLVED
+Retention Scenario Table,federated.p3_retention_economics,scenario,True,False,False,RESOLVED

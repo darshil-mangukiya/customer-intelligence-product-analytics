@@ -1,0 +1,6 @@
+profile,customer_volume,authoritative_current,metric,value
+full_250k,250000,false,mae,15.94
+full_250k,250000,false,r2,0.3663
+full_250k,250000,false,train_rows,187500.0
+full_250k,250000,false,test_rows,62500.0
+full_250k,250000,false,target_mean_next_90d_profit,14.17

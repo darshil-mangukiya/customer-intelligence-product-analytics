@@ -1,0 +1,6 @@
+source_file,rejected_rows,reason,owner
+rejected_rows.csv,5,See rejected source extract,Data Engineering
+transactions_duplicate_order_id.csv,1575,See rejected source extract,Data Engineering
+transactions_flagged_outliers.csv,2100,See rejected source extract,Data Engineering
+web_behavior_duplicate_session_id.csv,850,See rejected source extract,Data Engineering
+web_behavior_flagged_odd_sessions.csv,1700,See rejected source extract,Data Engineering

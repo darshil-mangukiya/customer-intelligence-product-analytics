@@ -1,0 +1,6 @@
+customer_id,signup_date,age,gender,income_band,acquisition_channel,region_id,state,city,loyalty_tier,segment_seed,preferred_category,churn_status,repeat_purchase_behavior
+C000001,2024-01-13,34,Female,75k-100k,Organic Search,R01,CA,San Francisco,Gold,High Value,Electronics,Active,Repeat
+C000002,2024-03-22,41,Male,50k-75k,Paid Search,R02,TX,Austin,Bronze,Discount Sensitive,Home,Churned,One-time
+C000003,2024-05-09,29,Female,100k-150k,Referral,R03,NY,New York,Platinum,Loyal,Beauty,Active,Repeat
+C000004,2024-07-18,52,Male,40k-50k,Social,R04,IL,Chicago,Silver,At Risk,Apparel,At Risk,Repeat
+C000005,2024-10-03,38,Nonbinary,75k-100k,Email,R05,WA,Seattle,Gold,High Intent,Outdoor,Active,Repeat

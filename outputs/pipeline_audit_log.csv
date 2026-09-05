@@ -1,0 +1,12 @@
+step,seconds,status,owner,business_impact
+synthetic_data_generation,7.56,success,Data Engineering,Source-like data availability.
+data_cleaning,10.36,success,Data Engineering,Trusted staged data.
+feature_engineering_and_reporting_layer,286.92,success,Data Engineering,BI and model-ready marts.
+customer_segmentation,7.88,success,Data Engineering,Segment dashboard and lifecycle strategy.
+rfm_analysis,2.11,success,Data Engineering,Downstream analytics readiness.
+churn_model,2.98,success,Data Engineering,Churn risk scoring.
+cohort_analysis,10.88,success,Data Engineering,Downstream analytics readiness.
+product_analytics,5.8,success,Data Engineering,Downstream analytics readiness.
+clv_model,7.55,success,Data Engineering,Customer value scoring.
+kpi_engine,3.36,success,Data Engineering,Executive metric publication.
+insights_engine,0.01,success,Data Engineering,Stakeholder recommendation output.

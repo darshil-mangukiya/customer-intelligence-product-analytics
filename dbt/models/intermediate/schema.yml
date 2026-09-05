@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: int_customer_order_features
+    description: Reusable customer order features used by segmentation, churn, CLV, and reporting marts.
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: orders
+        tests:
+          - accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1000000
+  - name: int_product_profitability
+    description: Product-level revenue, return, discount, and profit features.
+    columns:
+      - name: product_id
+        tests: [not_null, unique]
+  - name: int_cohort_base
+    description: Order-level bridge between customer first-order cohort and subsequent order months.
+    columns:
+      - name: customer_id
+        tests: [not_null]
+      - name: cohort_index
+        tests:
+          - accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 60

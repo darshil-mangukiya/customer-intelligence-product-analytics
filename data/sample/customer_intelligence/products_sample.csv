@@ -1,0 +1,6 @@
+product_id,category,sub_category,price,margin,lifecycle_stage,profitability_profile,return_profile
+P0001,Electronics,Headphones,129.99,0.42,Growth,High Margin,Medium Return
+P0002,Home,Kitchen Storage,39.99,0.35,Mature,Stable Margin,Low Return
+P0003,Beauty,Skincare,24.99,0.58,Growth,High Margin,Low Return
+P0004,Apparel,Athleisure,59.99,0.31,Mature,Medium Margin,High Return
+P0005,Outdoor,Backpacks,89.99,0.39,Launch,Medium Margin,Medium Return

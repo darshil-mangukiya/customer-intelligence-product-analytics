@@ -1,0 +1,17 @@
+data_context,kpi_name,value,display_format,grain,owner,threshold
+Synthetic portfolio data,Churn Rate,0.742,Percent,Customer,Customer Analytics,Below 25%
+Synthetic portfolio data,Retention Rate,0.258,Percent,Customer,Customer Analytics,Above 75%
+Synthetic portfolio data,Repeat Purchase Rate,0.4782,Percent,Customer,Customer Analytics,Above 45%
+Synthetic portfolio data,Average Order Value,94.9084,Currency,Order,BI,Monitor by segment
+Synthetic portfolio data,Revenue Per Customer,393.5091,Currency,Customer,Finance Analytics,Increasing MoM
+Synthetic portfolio data,Return Rate,0.1555,Percent,Order,Product Analytics,Below 10%
+Synthetic portfolio data,Average Historical CLV,155.4629,Currency,Customer,Customer Analytics,Increasing QoQ
+Synthetic portfolio data,Predicted CLV,215.8928,Currency,Customer,Customer Analytics,Increasing QoQ
+Synthetic portfolio data,Return-adjusted Margin,0.3951,Percent,Order,Finance Analytics,Above 30%
+Synthetic portfolio data,Month 3 Cohort Retention,0.0989,Percent,Cohort Month,Customer Analytics,Above 35%
+Synthetic portfolio data,Engagement Rate,0.2304,Percent,Customer,Lifecycle Marketing,Above 20%
+Synthetic portfolio data,Top Product Affinity Score,0.7668,Decimal,Product Pair,Product Analytics,Prioritize top decile
+Synthetic portfolio data,Revenue Leakage from Returns and Discounts,647834.0343,Currency,Order,Finance Analytics,Reduce MoM
+Synthetic portfolio data,Total Net Revenue,1967545.3786,Currency,Business,Executive,Growth target
+Synthetic portfolio data,Total Return-adjusted Profit,777314.5351,Currency,Business,Executive,Growth target
+Synthetic portfolio data,Total Orders,25000.0,Integer,Order,Executive,Growth target

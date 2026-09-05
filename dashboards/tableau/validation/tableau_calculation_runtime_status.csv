@@ -1,0 +1,34 @@
+calculation,category,datasource,status,reason
+Customer Count,core,customer_analytics,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Revenue per Customer,core,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Profit per Customer,core,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Observed Churn Rate,core,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Observed Retention Rate,core,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Modeled High Risk,core,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Risk × Value Score,core,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Metric Selector Value,core,customer_analytics,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+CLV Band (Display),core,customer_analytics,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Product Return Rate,core,product_profitability,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Profit Margin,core,product_profitability,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Experiment Absolute Lift,core,experiment_results,USED,Required by a final runtime-simple worksheet.
+Experiment Relative Lift,core,experiment_results,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Statistical Status,core,experiment_results,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Practical Status,core,experiment_results,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Confidence Interval Label,core,experiment_results,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Customer Lifetime Revenue (LOD),lod,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Customer Lifetime Profit (LOD),lod,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Segment Customer Count (LOD),lod,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Segment Revenue (LOD),lod,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+All-customer Revenue (LOD),lod,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Segment Revenue Share (LOD),lod,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Cohort Size (LOD),lod,cohort_retention,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Category Revenue (LOD),lod,product_profitability,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Segment Percent of Total,table,customer_analytics,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Product Rank,table,product_profitability,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Cumulative Profit,table,product_profitability,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Cohort Retention %,table,cohort_retention,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.
+Retention Period Change,table,cohort_retention,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Three-period Moving Retention,table,cohort_retention,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Conversion Rate Difference,table,experiment_results,AVAILABLE_NOT_USED,Valid catalog definition retained without an active worksheet dependency.
+Top N Filter,helper,product_profitability,DEFERRED,Depends on table-calculation rank plus a parameter; retained but not activated.
+Experiment View Label,helper,experiment_results,SIMPLIFIED,Replaced in active worksheets by a governed prepared field or direct aggregation.

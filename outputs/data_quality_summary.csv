@@ -1,0 +1,8 @@
+suite,checks,passing_checks,failing_checks,severity,status
+accepted_values,2.0,2.0,0,HIGH,PASS
+freshness,1.0,1.0,0,MEDIUM,PASS
+key_integrity,10.0,10.0,0,HIGH,PASS
+metric_reconciliation,1.0,1.0,0,HIGH,PASS
+numeric_ranges,4.0,4.0,0,HIGH,PASS
+raw_volume,5.0,5.0,0,HIGH,PASS
+referential_integrity,2.0,2.0,0,HIGH,PASS

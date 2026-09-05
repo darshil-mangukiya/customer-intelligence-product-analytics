@@ -1,0 +1,12 @@
+anomaly_type,asset_name,column_name,observed_value,severity,recommended_action
+unusual_return_rate,mart_product_profitability,return_rate,P000102=0.3009972801450589,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000189=0.3022452504317789,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000490=0.3272727272727272,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000694=0.3436619718309859,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000927=0.3102493074792243,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000421=0.3043478260869565,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000445=0.3006993006993007,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000175=0.3049853372434017,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000276=0.3052884615384615,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P000990=0.3023255813953488,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."
+unusual_return_rate,mart_product_profitability,return_rate,P001394=0.3099415204678362,MEDIUM,"Review product content, fulfillment, quality, and return policy exposure."

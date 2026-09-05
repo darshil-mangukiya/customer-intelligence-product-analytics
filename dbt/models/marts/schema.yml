@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: mart_customer_360
+    description: Customer-level reporting mart for customer analytics and lifecycle reporting.
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+      - name: return_rate
+        tests:
+          - accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+  - name: mart_product_profitability
+    description: Product profitability mart with return-adjusted margin and performance flags.
+    columns:
+      - name: product_id
+        tests: [not_null, unique]
+  - name: mart_cohort_retention
+    description: Monthly cohort retention mart from month 0 to month 12.
+    columns:
+      - name: retention_rate
+        tests:
+          - accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1

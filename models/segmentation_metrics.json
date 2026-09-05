@@ -1,0 +1,5 @@
+{
+  "n_clusters": 5,
+  "silhouette_score": 0.2878,
+  "customers_scored": 5000
+}

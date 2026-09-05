@@ -1,0 +1,22 @@
+{
+  "experiment_id": "synthetic_retention_offer_v1",
+  "name": "High-risk customer retention offer",
+  "business_question": "Does a modeled retention offer improve conversion among High/Critical churn-risk customers?",
+  "hypothesis": "Treatment conversion equals control conversion.",
+  "primary_metric": "conversion_rate",
+  "secondary_metrics": ["relative_lift", "incremental_profit_proxy"],
+  "guardrail_metrics": ["avg_profit_proxy", "sample_ratio_mismatch"],
+  "population": "Synthetic High/Critical churn-risk customers",
+  "treatment": "Retention Offer",
+  "control": "Control",
+  "baseline": 0.06,
+  "expected_effect": 0.025,
+  "minimum_detectable_effect": 0.02,
+  "alpha": 0.05,
+  "power": 0.80,
+  "sample_size_target": "Calculated by analytics/experiment_design.py",
+  "statistical_method": "Two-sided pooled two-proportion z-test; unpooled Wald difference interval",
+  "status": "EVALUATED_SYNTHETIC",
+  "decision": "Targeted rollout candidate with continuing holdout, subject to real-world validation",
+  "owner_persona": "Retention Manager"
+}

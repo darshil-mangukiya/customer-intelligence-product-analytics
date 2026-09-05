@@ -1,0 +1,2 @@
+experiment_id,decision,reason,statistical_evidence,practical_evidence,business_impact,risk_or_warning,review_status,review_date
+synthetic_retention_offer_v1,Targeted rollout candidate with a continuing holdout,Statistical and practical significance passed; SRM passed.,"p=0.001509; CI=[0.010563, 0.045052]",absolute_lift=0.027808; threshold=0.0200,Synthetic scenario only; use a controlled real-world validation before action.,Allocation is consistent with the planned split.,NEEDS_REVIEW,2026-01-31

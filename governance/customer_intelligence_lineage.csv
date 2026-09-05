@@ -1,0 +1,9 @@
+source,transformation,governed_output,decision_use,validation_control
+data/raw/customers.csv,etl.feature_engineering,data/processed/customer_features.csv,customer attributes and model inputs,source contract and feature tests
+data/raw/transactions.csv,etl.run_pipeline,data/marts/fact_orders.csv,revenue and product performance,reconciliation and data validation
+data/processed/customer_features.csv,churn.model_churn,data/marts/mart_churn_risk.csv,retention prioritization,held-out metrics calibration and drift
+data/processed/customer_features.csv,segmentation.segment_customers,data/marts/mart_customer_segments.csv,customer strategy segments,silhouette DB index seed and period stability
+data/marts/fact_orders.csv,forecasting.forecast_metrics,data/exports/monthly_revenue_forecast.csv,planning scenario,walk-forward baseline comparison
+data/exports/experiment_evaluation.csv,analytics.r_validation,data/exports/python_r_statistical_reconciliation.csv,experiment decision support,cross-language tolerance reconciliation
+governed analytical outputs,analytics.customer_decision_support,artifacts/customer_intelligence/latest_customer_insight_packet.json,AI-assisted advisory analysis,numeric reconciliation schema validation and human review
+latest_customer_insight_packet.json,ai.copilot,data/exports/ai_evaluation_results.csv,advisory question answering,fidelity safety hallucination and fallback evaluation

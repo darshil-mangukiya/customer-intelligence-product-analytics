@@ -1,0 +1,22 @@
+repository:
+  name: customer-intelligence-product-analytics
+  description: Production-style customer intelligence, product analytics, churn, CLV, KPI, BI, and decision-support platform for ecommerce analytics.
+  topics:
+    - python
+    - sql
+    - postgresql
+    - powerbi
+    - tableau
+    - analytics
+    - business-intelligence
+    - customer-analytics
+    - product-analytics
+    - churn
+    - clv
+    - machine-learning
+    - cohort-analysis
+    - streamlit
+    - fastapi
+  has_issues: true
+  has_projects: false
+  has_wiki: false

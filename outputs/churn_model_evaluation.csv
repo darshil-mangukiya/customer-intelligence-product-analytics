@@ -1,0 +1,6 @@
+profile,customer_volume,authoritative_current,metric,value
+full_250k,250000,false,precision,0.9967
+full_250k,250000,false,recall,0.9642
+full_250k,250000,false,roc_auc,0.9952
+full_250k,250000,false,test_rows,62500.0
+full_250k,250000,false,positive_rate,0.7682

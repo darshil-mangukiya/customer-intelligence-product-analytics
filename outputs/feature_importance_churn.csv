@@ -1,0 +1,13 @@
+feature,coefficient,importance,direction,business_interpretation
+recency_days,27.79412079582509,27.79412079582509,Increases churn risk,Longer time since last purchase is a direct churn warning.
+channel_diversity,-0.9231606605976764,0.9231606605976764,Reduces churn risk,Behavioral signal used in churn risk scoring.
+discount_dependency,0.7149456736275425,0.7149456736275425,Increases churn risk,High promo dependency may signal weak full-price loyalty.
+return_rate,-0.4393171133440301,0.4393171133440301,Reduces churn risk,"Returns can indicate product fit, experience, or quality issues."
+net_revenue,-0.3827363193028056,0.3827363193028056,Reduces churn risk,Customer value changes the priority and risk economics of retention outreach.
+category_diversity,-0.3399990574147706,0.3399990574147706,Reduces churn risk,Behavioral signal used in churn risk scoring.
+days_since_engagement,0.3038098724031742,0.3038098724031742,Increases churn risk,A long engagement gap weakens retention intervention effectiveness.
+return_adjusted_profit,0.2383116573818837,0.2383116573818837,Increases churn risk,Profitability helps distinguish valuable churn risk from low-value risk.
+product_diversity,0.2251769575471971,0.2251769575471971,Increases churn risk,Behavioral signal used in churn risk scoring.
+orders,0.118371958197346,0.118371958197346,Increases churn risk,Higher purchase count usually indicates stronger relationship depth.
+avg_page_views,-0.0925553984199888,0.0925553984199888,Reduces churn risk,Behavioral signal used in churn risk scoring.
+engagement_score,-0.0921734596926182,0.0921734596926182,Reduces churn risk,Email and campaign engagement indicate retention reachability.

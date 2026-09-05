@@ -1,0 +1,7 @@
+{
+  "mae": 19.03,
+  "r2": 0.2092,
+  "train_rows": 3750,
+  "test_rows": 1250,
+  "target_mean_next_90d_profit": 15.09
+}

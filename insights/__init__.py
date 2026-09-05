@@ -1,0 +1,2 @@
+"""Business insight generation package."""
+

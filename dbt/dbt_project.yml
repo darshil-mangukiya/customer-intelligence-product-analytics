@@ -1,0 +1,25 @@
+name: customer_intelligence_platform
+version: 1.0.0
+config-version: 2
+
+profile: customer_intelligence_platform
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+models:
+  customer_intelligence_platform:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: table
+    marts:
+      +schema: marts
+      +materialized: table
+    semantic:
+      +schema: semantic
+      +materialized: view
+

@@ -1,0 +1,13 @@
+name: customer_intelligence_daily
+timezone: America/Los_Angeles
+schedule: "0 6 * * *"
+sla:
+  analytics_pipeline_minutes: 60
+  validation_minutes: 5
+  monitoring_minutes: 5
+  model_registry_minutes: 5
+  executive_pdf_minutes: 5
+notifications:
+  on_failure: analytics-ops@example.com
+  on_sla_miss: bi-platform@example.com
+

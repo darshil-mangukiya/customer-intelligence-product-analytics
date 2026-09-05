@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: Raw synthetic ecommerce operational data.
+    tables:
+      - name: customers
+        description: Customer profile, acquisition, loyalty, and churn seed attributes.
+        columns:
+          - name: customer_id
+            tests: [not_null]
+      - name: products
+        description: Product catalog, margin, lifecycle, and return profile.
+        columns:
+          - name: product_id
+            tests: [not_null]
+      - name: transactions
+        description: Order-level transaction data with revenue, cost, discount, returns, and status.
+        columns:
+          - name: order_id
+            tests: [not_null]
+          - name: customer_id
+            tests: [not_null]
+          - name: product_id
+            tests: [not_null]
+      - name: web_behavior
+        description: Session-level site and app behavior.
+        columns:
+          - name: session_id
+            tests: [not_null]
+      - name: engagement
+        description: Customer-level email and campaign engagement.
+        columns:
+          - name: customer_id
+            tests: [not_null]
+

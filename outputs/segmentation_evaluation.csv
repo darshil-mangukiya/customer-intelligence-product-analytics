@@ -1,0 +1,4 @@
+profile,customer_volume,authoritative_current,metric,value
+full_250k,250000,false,n_clusters,5.0
+full_250k,250000,false,silhouette_score,0.2769
+full_250k,250000,false,customers_scored,250000.0

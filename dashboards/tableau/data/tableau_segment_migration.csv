@@ -1,0 +1,28 @@
+data_context,prior_segment,current_segment,transition,migration_signal,customer_count,revenue,revenue_change,clv,clv_change,avg_churn_risk,avg_engagement
+Synthetic portfolio data,At Risk,At Risk,At Risk → At Risk,STABLE,4,657.77,0.0,313.89,0.0,0.999999999904338,55.8675
+Synthetic portfolio data,At Risk,Champions,At Risk → Champions,IMPROVING,135,52647.841558931046,19544.631558931043,21115.34905893104,8208.244558931043,0.3646963023356467,74.16244444444445
+Synthetic portfolio data,At Risk,Loyal Customers,At Risk → Loyal Customers,IMPROVING,115,20878.8,1850.91,7927.75,730.7729999999999,0.8090257954681761,69.91747826086957
+Synthetic portfolio data,At Risk,Needs Nurture,At Risk → Needs Nurture,IMPROVING,26,3381.54,2.8421709430404014e-14,1340.8105,-1.0658141036401504e-14,0.9999987635468182,61.98461538461538
+Synthetic portfolio data,Champions,Champions,Champions → Champions,STABLE,648,1270248.055827031,373883.37992354616,504738.8988270306,148729.5594235462,0.0810376727558204,90.68581790123456
+Synthetic portfolio data,Champions,Loyal Customers,Champions → Loyal Customers,DETERIORATING,57,34760.15396913934,844.9499999999997,14531.546469139344,355.27,0.99021680538607,77.1378947368421
+Synthetic portfolio data,Lost Customers,At Risk,Lost Customers → At Risk,IMPROVING,159,13409.87,-2.8421709430404014e-14,5350.7965,3.5527136788005016e-14,0.9999999999611372,55.881383647798735
+Synthetic portfolio data,Lost Customers,Champions,Lost Customers → Champions,IMPROVING,86,30588.96,17260.67,11679.386,6504.9725,0.425626871038981,69.84686046511628
+Synthetic portfolio data,Lost Customers,Lost Customers,Lost Customers → Lost Customers,STABLE,50,4143.55,0.0,1779.6915,0.0,0.999999999979113,56.3032
+Synthetic portfolio data,Lost Customers,Loyal Customers,Lost Customers → Loyal Customers,IMPROVING,69,9100.09,4707.81,3277.2995,1684.3305,0.5220673224397643,69.63869565217391
+Synthetic portfolio data,Lost Customers,Needs Nurture,Lost Customers → Needs Nurture,IMPROVING,325,29795.04,1208.03,11639.1515,557.0795,0.9966498410186172,55.218369230769234
+Synthetic portfolio data,Lost Customers,Potential Loyalists,Lost Customers → Potential Loyalists,IMPROVING,96,14208.04,7365.63,5130.519,2825.645,0.5875475786607977,65.85958333333333
+Synthetic portfolio data,Loyal Customers,Champions,Loyal Customers → Champions,IMPROVING,334,252448.07156132348,79607.5521638695,102213.81856132348,30887.171663869507,0.166753758055829,83.27263473053893
+Synthetic portfolio data,Loyal Customers,Loyal Customers,Loyal Customers → Loyal Customers,STABLE,82,28912.77,1371.4299999999998,10383.546,587.909,0.9919597603159244,75.22865853658537
+Synthetic portfolio data,Needs Nurture,Champions,Needs Nurture → Champions,IMPROVING,131,51692.14,24248.84,17939.4775,8600.153,0.2865658277679226,74.83297709923663
+Synthetic portfolio data,Needs Nurture,Loyal Customers,Needs Nurture → Loyal Customers,IMPROVING,104,17927.15,2247.64,6209.3155,687.9375,0.7513075504735697,69.67884615384615
+Synthetic portfolio data,Needs Nurture,Needs Nurture,Needs Nurture → Needs Nurture,STABLE,181,15436.49,734.18,5210.604,306.61999999999995,0.9995783648100864,55.45243093922652
+Synthetic portfolio data,Needs Nurture,Potential Loyalists,Needs Nurture → Potential Loyalists,IMPROVING,42,8301.6,4136.12,3078.991,1609.4715,0.5215076084334223,62.84428571428572
+Synthetic portfolio data,No Prior Activity,Champions,No Prior Activity → Champions,IMPROVING,14,3697.36,3697.36,1618.0045,1618.0045,0.3973269924099429,65.91
+Synthetic portfolio data,No Prior Activity,Lost Customers,No Prior Activity → Lost Customers,DETERIORATING,1780,0.0,0.0,0.0,0.0,0.9999999999996791,43.26953932584269
+Synthetic portfolio data,No Prior Activity,Loyal Customers,No Prior Activity → Loyal Customers,IMPROVING,10,907.63,907.63,326.973,326.973,0.2883226621372892,60.803
+Synthetic portfolio data,No Prior Activity,Needs Nurture,No Prior Activity → Needs Nurture,STABLE,25,1453.55,1453.55,575.592,575.592,0.9621149118179928,54.53
+Synthetic portfolio data,No Prior Activity,Potential Loyalists,No Prior Activity → Potential Loyalists,IMPROVING,241,23239.82,23239.82,8890.892,8890.892,0.6249303241020022,56.65402489626556
+Synthetic portfolio data,Potential Loyalists,Champions,Potential Loyalists → Champions,IMPROVING,104,43722.01,19215.41,17034.9635,7546.08,0.3059114065289143,71.52788461538461
+Synthetic portfolio data,Potential Loyalists,Loyal Customers,Potential Loyalists → Loyal Customers,IMPROVING,99,23795.605681200308,2485.08,10048.89168120031,862.7375,0.8785548992378303,67.39939393939395
+Synthetic portfolio data,Potential Loyalists,Needs Nurture,Potential Loyalists → Needs Nurture,DETERIORATING,77,11711.83,2.273736754432321e-13,4811.523,3.3306690738754696e-15,0.9986746964410352,57.70454545454545
+Synthetic portfolio data,Potential Loyalists,Potential Loyalists,Potential Loyalists → Potential Loyalists,STABLE,6,479.64,250.87,146.85399999999998,58.80400000000001,0.3798986936786969,56.405

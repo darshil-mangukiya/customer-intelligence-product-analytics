@@ -1,0 +1,83 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Cleaned customer source with standardized acquisition channels and deduped customer IDs.
+    config:
+      contract:
+        enforced: false
+    columns:
+      - name: customer_id
+        data_type: text
+        tests: [not_null, unique]
+      - name: acquisition_channel
+        data_type: text
+        tests:
+          - not_null
+      - name: loyalty_tier
+        data_type: text
+  - name: stg_products
+    description: Cleaned product catalog with category, lifecycle, margin, return, and retention attributes.
+    config:
+      contract:
+        enforced: false
+    columns:
+      - name: product_id
+        data_type: text
+        tests: [not_null, unique]
+      - name: category
+        data_type: text
+        tests: [not_null]
+  - name: stg_orders
+    description: Cleaned order source with return-adjusted revenue, discount, loss, and profit fields.
+    config:
+      contract:
+        enforced: false
+    columns:
+      - name: order_id
+        data_type: text
+        tests: [not_null, unique]
+      - name: customer_id
+        data_type: text
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+      - name: product_id
+        data_type: text
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_products')
+                field: product_id
+      - name: net_revenue
+        data_type: numeric
+        tests:
+          - accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1000000
+  - name: stg_sessions
+    description: Cleaned web/app sessions with bounded page view and time spent values.
+    columns:
+      - name: session_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+  - name: stg_engagement
+    description: Customer engagement facts for lifecycle marketing analytics.
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id

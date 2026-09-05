@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: time_spine_daily
+    description: Deterministic daily time spine for governed semantic metrics.
+    time_spine:
+      standard_granularity_column: date_day
+    columns:
+      - name: date_day
+        granularity: day
+
+semantic_models:
+  - name: executive_kpis
+    description: Governed one-row executive KPI model backed by dbt warehouse transformations.
+    model: ref('mart_executive_kpis')
+    defaults:
+      agg_time_dimension: snapshot_date
+    entities:
+      - name: executive_snapshot
+        type: primary
+        expr: "'executive_snapshot'"
+    dimensions:
+      - name: snapshot_date
+        type: time
+        expr: current_date
+        type_params:
+          time_granularity: day
+    measures:
+      - name: total_net_revenue
+        description: Net revenue after returns and cancellations.
+        agg: sum
+        expr: total_net_revenue
+      - name: total_return_adjusted_profit
+        description: Profit after return leakage and cancellation adjustment.
+        agg: sum
+        expr: total_return_adjusted_profit
+      - name: revenue_leakage
+        description: Revenue and margin leakage from returns and discounts.
+        agg: sum
+        expr: revenue_leakage
+
+metrics:
+  - name: total_net_revenue
+    label: Total Net Revenue
+    description: Net revenue after returns and cancellations.
+    type: simple
+    type_params:
+      measure: total_net_revenue
+  - name: return_adjusted_profit
+    label: Return Adjusted Profit
+    description: Profit after return leakage and cancellation adjustment.
+    type: simple
+    type_params:
+      measure: total_return_adjusted_profit
+  - name: revenue_leakage
+    label: Revenue Leakage
+    description: Revenue and margin leakage from returns and discounts.
+    type: simple
+    type_params:
+      measure: revenue_leakage
